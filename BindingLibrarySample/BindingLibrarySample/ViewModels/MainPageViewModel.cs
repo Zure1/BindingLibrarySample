@@ -3,6 +3,7 @@
     using System;
     using System.ComponentModel;
     using System.Windows.Input;
+    using BindingLibrarySample.Services;
     using Xamarin.Forms;
 
     public class MainPageViewModel : INotifyPropertyChanged
@@ -12,6 +13,7 @@
         public int Number2 { get; set; }
 
         private string numbersSumResult = "Start calculating to see the result!";
+        private IAddNumberService addNumberService;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -28,11 +30,12 @@
         public MainPageViewModel()
         {
             AddNumbersCommand = new Command(AddNumbers);
+            addNumberService = DependencyService.Resolve<IAddNumberService>();
         }
 
         private void AddNumbers()
         {
-            var sum = Number1 + Number2;
+            var sum = addNumberService.AddNumbers(Number1, Number2);
             NumbersSumResult = $"Sum: {sum.ToString()}";
         }
 

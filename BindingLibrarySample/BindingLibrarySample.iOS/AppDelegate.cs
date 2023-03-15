@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using BindingLibrarySample.iOS.Services;
+using BindingLibrarySample.Services;
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
 
 namespace BindingLibrarySample.iOS
 {
@@ -13,6 +15,11 @@ namespace BindingLibrarySample.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        public AppDelegate()
+        {
+            DependencyService.Register<IAddNumberService, AddNumberService>();
+        }
+
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
