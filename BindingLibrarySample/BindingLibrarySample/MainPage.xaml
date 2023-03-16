@@ -2,72 +2,48 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BindingLibrarySample.ViewModels"
-             x:Class="BindingLibrarySample.MainPage">
+             x:Class="BindingLibrarySample.MainPage"
+             BackgroundColor="#1f1f1f">
 
     <ContentPage.BindingContext>
         <local:MainPageViewModel/>
     </ContentPage.BindingContext>
 
     <Grid
-        Margin="10"
-        RowDefinitions="Auto,Auto,Auto,Auto">
-        <!-- Number 1 Label -->
-        <Label
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Text="Number 1:"
-            Grid.Row="0"
-            Grid.Column="0">
-        </Label>
+        Margin="10,0"
+        RowDefinitions="*,Auto,Auto,Auto,Auto,*">
 
-        <!-- Number 1 Entry -->
-        <Frame
-            Grid.Row="0"
-            Grid.Column="1"
-            BorderColor="Black"
-            CornerRadius="6">
-            <Entry
-                Keyboard="Numeric"
-                TextChanged="EntryNumber1_TextChanged">
-            </Entry>
-        </Frame>
-
-        <!-- Number 2 Label -->
-        <Label
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            Text="Number 2:"
+        <Entry
             Grid.Row="1"
-            Grid.Column="0">
-        </Label>
+            Keyboard="Numeric"
+            FontSize="15"
+            BackgroundColor="White"
+            Placeholder="Enter first number"
+            PlaceholderColor="#a1a1a1"
+            TextColor="Black"
+            TextChanged="EntryNumber1_TextChanged" />
 
-        <!-- Number 2 Entry -->
-        <Frame
-            Grid.Row="1"
-            Grid.Column="1"
-            BorderColor="Black"
-            CornerRadius="6">
-            <Entry
-                Keyboard="Numeric"
-                TextChanged="EntryNumber2_TextChanged">
-            </Entry>
-        </Frame>
-
-        <!-- Add Numbers Button -->
-        <Button
+        <Entry
             Grid.Row="2"
-            Grid.ColumnSpan="2"
-            Text="Add Numbers"
-            Command="{Binding AddNumbersCommand}">
-        </Button>
+            Keyboard="Numeric"
+            FontSize="15"
+            BackgroundColor="White"
+            Placeholder="Enter second number"
+            PlaceholderColor="#a1a1a1"
+            TextColor="Black"
+            TextChanged="EntryNumber2_TextChanged" />
 
-        <!-- Numbers Sum Result -->
-        <Label
-            HorizontalOptions="Center"
+        <Button
             Grid.Row="3"
-            Grid.ColumnSpan="2"
-            Text="{Binding NumbersSumResult}">
-        </Label>
-    </Grid>
+            Text="Tap to add numbers"
+            TextColor="LightCoral"
+            Command="{Binding AddNumbersCommand}" />
 
+        <Label
+            Grid.Row="4"
+            HorizontalOptions="CenterAndExpand"
+            TextColor="LightSkyBlue"
+            Text="{Binding NumbersSumResult}" />
+
+    </Grid>
 </ContentPage>
