@@ -52,10 +52,16 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="NumberAdderBindingLibrary">
+      <HintPath>..\..\..\NumberAdderAndroidBindingLibrary\NumberAdderBindingLibrary\obj\Release\NumberAdderBindingLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib">
+      <Version>1.8.10</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

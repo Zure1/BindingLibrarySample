@@ -35,8 +35,15 @@
 
         private void AddNumbers()
         {
-            var sum = addNumberService.AddNumbers(Number1, Number2);
-            NumbersSumResult = $"Sum: {sum.ToString()}";
+            try
+            {
+                var sum = addNumberService.AddNumbers(Number1, Number2);
+                NumbersSumResult = $"Sum: {sum.ToString()}";
+            }
+            catch (Exception ex)
+            {
+                NumbersSumResult = ex.Message;
+            }
         }
 
         protected void OnPropertyChanged(string propertyName)
