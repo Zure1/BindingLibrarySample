@@ -1,0 +1,11 @@
+framework module ComputeThis {
+  umbrella header "ComputeThis.h"
+
+  export *
+  module * { export * }
+}
+
+module ComputeThis.Swift {
+  header "ComputeThis-Swift.h"
+  requires objc
+}

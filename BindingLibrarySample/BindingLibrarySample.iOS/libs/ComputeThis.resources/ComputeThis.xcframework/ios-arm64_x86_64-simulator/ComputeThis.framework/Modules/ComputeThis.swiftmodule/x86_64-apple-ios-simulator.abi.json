@@ -1,0 +1,615 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ComputeThis"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NumberError",
+        "printedName": "NumberError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unsupportedValue",
+            "printedName": "unsupportedValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ComputeThis.NumberError.Type) -> ComputeThis.NumberError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NumberError",
+                    "printedName": "ComputeThis.NumberError",
+                    "usr": "c:@M@ComputeThis@E@NumberError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ComputeThis.NumberError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NumberError",
+                        "printedName": "ComputeThis.NumberError",
+                        "usr": "c:@M@ComputeThis@E@NumberError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ComputeThis@E@NumberError@NumberErrorUnsupportedValue",
+            "mangledName": "$s11ComputeThis11NumberErrorO16unsupportedValueyA2CmF",
+            "moduleName": "ComputeThis",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ComputeThis.NumberError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NumberError",
+                    "printedName": "ComputeThis.NumberError",
+                    "usr": "c:@M@ComputeThis@E@NumberError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11ComputeThis11NumberErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11ComputeThis11NumberErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "ComputeThis",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ComputeThis11NumberErrorO8rawValueSivp",
+            "mangledName": "$s11ComputeThis11NumberErrorO8rawValueSivp",
+            "moduleName": "ComputeThis",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ComputeThis11NumberErrorO8rawValueSivg",
+                "mangledName": "$s11ComputeThis11NumberErrorO8rawValueSivg",
+                "moduleName": "ComputeThis",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11ComputeThis11NumberErrorO03_nsD6DomainSSvpZ",
+            "mangledName": "$s11ComputeThis11NumberErrorO03_nsD6DomainSSvpZ",
+            "moduleName": "ComputeThis",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11ComputeThis11NumberErrorO03_nsD6DomainSSvgZ",
+                "mangledName": "$s11ComputeThis11NumberErrorO03_nsD6DomainSSvgZ",
+                "moduleName": "ComputeThis",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@ComputeThis@E@NumberError",
+        "mangledName": "$s11ComputeThis11NumberErrorO",
+        "moduleName": "ComputeThis",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ComputeThis"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PositiveNumber",
+        "printedName": "PositiveNumber",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber(py)value",
+            "mangledName": "$s11ComputeThis14PositiveNumberC5valueSuvp",
+            "moduleName": "ComputeThis",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber(im)value",
+                "mangledName": "$s11ComputeThis14PositiveNumberC5valueSuvg",
+                "moduleName": "ComputeThis",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PositiveNumber",
+                "printedName": "ComputeThis.PositiveNumber",
+                "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber(im)init:",
+            "mangledName": "$s11ComputeThis14PositiveNumberCyACSucfc",
+            "moduleName": "ComputeThis",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PositiveNumber",
+                "printedName": "ComputeThis.PositiveNumber",
+                "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber(im)init:error:",
+            "mangledName": "$s11ComputeThis14PositiveNumberCyACSiKcfc",
+            "moduleName": "ComputeThis",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PositiveNumber",
+                "printedName": "ComputeThis.PositiveNumber",
+                "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber(im)init",
+            "mangledName": "$s11ComputeThis14PositiveNumberCACycfc",
+            "moduleName": "ComputeThis",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber",
+        "mangledName": "$s11ComputeThis14PositiveNumberC",
+        "moduleName": "ComputeThis",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ComputeThis"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Adder",
+        "printedName": "Adder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(a:b:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PositiveNumber",
+                "printedName": "ComputeThis.PositiveNumber",
+                "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PositiveNumber",
+                "printedName": "ComputeThis.PositiveNumber",
+                "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PositiveNumber",
+                "printedName": "ComputeThis.PositiveNumber",
+                "usr": "c:@M@ComputeThis@objc(cs)PositiveNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ComputeThis@objc(cs)Adder(im)addWithA:b:",
+            "mangledName": "$s11ComputeThis5AdderC3add1a1bAA14PositiveNumberCAH_AHtF",
+            "moduleName": "ComputeThis",
+            "objc_name": "addWithA:b:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Adder",
+                "printedName": "ComputeThis.Adder",
+                "usr": "c:@M@ComputeThis@objc(cs)Adder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ComputeThis@objc(cs)Adder(im)init",
+            "mangledName": "$s11ComputeThis5AdderCACycfc",
+            "moduleName": "ComputeThis",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ComputeThis@objc(cs)Adder",
+        "mangledName": "$s11ComputeThis5AdderC",
+        "moduleName": "ComputeThis",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/Twelker\/Work\/Samples\/ComputeThis\/ComputeThis\/Numbers\/PositiveNumber.swift",
+      "kind": "StringLiteral",
+      "offset": 44,
+      "length": 14,
+      "value": "\"ComputeThis.PositiveNumber\""
+    }
+  ]
+}
